@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.covid19tester.MainActivity">
+
+    <ProgressBar
+        android:id="@+id/main_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvRefresh"
+        style="@style/tvProgressbar"/>
+
+    <LinearLayout
+        android:id="@+id/dashboard_form"
+        style="@style/login_form_Layout">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/heading_text"/>
+
+        <LinearLayout
+            style="@style/number_layouts">
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/positive_patients_textView"/>
+
+            <TextView
+                android:id="@+id/tvPositive"
+                style="@style/number_of_positive_patients_textView"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/number_layouts">
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/pending_results_textView"/>
+
+            <TextView
+                android:id="@+id/tvPending"
+                style="@style/number_of_positive_patients_textView"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/main_activity_buttons_layout">
+
+            <Button
+                android:id="@+id/btnAdd"
+                style="@style/button_add_entry"/>
+
+            <Button
+                android:id="@+id/btnRefresh"
+                style="@style/button_refresh"/>
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvList"
+            style="@style/rvListLayout"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+

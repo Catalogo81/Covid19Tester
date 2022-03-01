@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        style="@style/cardview_row_layout"
+        card_view:cardUseCompatPadding="false"
+        card_view:cardElevation="5dp"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardBackgroundColor="@color/colorWhite">
+
+        <LinearLayout
+            style="@style/row_Layout">
+
+            <TextView
+                android:id="@+id/tvFullName"
+                style="@style/tvFullName"/>
+
+            <ImageView
+                android:id="@+id/ivResult"
+                style="@style/imageview"
+                tools:srcCompat="@drawable/pending" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

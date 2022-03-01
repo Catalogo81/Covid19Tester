@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="heading_margin_top">20dp</dimen>
+    <dimen name="switch_margin_top">15dp</dimen>
+    <dimen name="heading_margin_bottom">10dp</dimen>
+    <dimen name="tvProgressbar_margin_top">25dp</dimen>
+    <dimen name="buttons_margin_top">50dp</dimen>
+    <dimen name="button_add_entry_margin_start">2dp</dimen>
+    <dimen name="button_add_entry2_margin_start">50dp</dimen>
+    <dimen name="cardview_margin_start">100dp</dimen>
+    <dimen name="heading_text_size">24sp</dimen>
+    <dimen name="switch_padding">5dp</dimen>
+    <dimen name="padding">7dp</dimen>
+    <dimen name="full_name_width">0dp</dimen>
+    <dimen name="positive_patients_text_size">16sp</dimen>
+    <dimen name="char_text_size">48sp</dimen>
+    <dimen name="full_name_text_size">18sp</dimen>
+</resources>

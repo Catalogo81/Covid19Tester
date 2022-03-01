@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Covid19Tester</string>
+    <string name="error">Error: </string>
+    <string name="adding_new_entry_please_wait">Adding new entry…please wait…</string>
+    <string name="deleting_entry">Deleting entry!</string>
+    <string name="changing_data_please_wait">Changing data…please wait…</string>
+    <string name="deleted_successfully">Deleted successfully!</string>
+    <string name="loading_please_wait">Loading…please wait…</string>
+    <string name="enter_full_name">enter full name</string>
+    <string name="enter_id_nr">enter id number</string>
+    <string name="pending_results">Pending Results</string>
+    <string name="results_positive">Results Positive</string>
+    <string name="pending">Pending</string>
+    <string name="positive">Positive</string>
+    <string name="add_entry">Add Entry</string>
+    <string name="refresh">Refresh</string>
+    <string name="covid_19_dashboard">Covid-19 Dashboard</string>
+    <string name="number_of_positive_patients">Number of positive patients</string>
+    <string name="zero">0</string>
+    <string name="number_of_pending_results">Number of pending results</string>
+    <string name="refreshing_data_please_wait">Refreshing data…please wait…</string>
+    <string name="welcome">Welcome</string>
+    <string name="add_new_entry">Add New Entry</string>
+    <string name="please_enter_full_name_and_id">Please enter Full Name and ID!</string>
+    <string name="new_entry_successfully_saved">New entry successfully saved!</string>
+    <string name="no_entry_added">No entry added!</string>
+</resources>

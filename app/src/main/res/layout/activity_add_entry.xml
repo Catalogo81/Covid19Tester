@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.covid19tester.AddEntry">
+
+    <ProgressBar
+        android:id="@+id/add_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvLoad"
+        style="@style/tvProgressbar_add"/>
+
+    <LinearLayout
+        android:id="@+id/add_form"
+        style="@style/login_form_Layout">
+
+        <androidx.cardview.widget.CardView
+            style="@style/full_name_cardview"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="false">
+
+            <EditText
+                android:id="@+id/etFullName"
+                style="@style/etFullName"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/full_name_cardview"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="false">
+
+            <EditText
+                android:id="@+id/etID"
+                style="@style/etID"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchPos"
+            style="@style/switchPos"/>
+
+        <Button
+            android:id="@+id/btnAdd"
+            style="@style/button_add_entry2"/>
+
+    </LinearLayout>
+</LinearLayout>

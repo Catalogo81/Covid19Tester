@@ -1,0 +1,223 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="heading_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">@dimen/heading_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/heading_margin_bottom</item>
+        <item name="android:textSize">@dimen/heading_text_size</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:text">@string/covid_19_dashboard</item>
+    </style>
+
+    <style name="number_layouts">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/heading_margin_top</item>
+        <item name="android:layout_marginStart">@dimen/heading_margin_top</item>
+        <item name="android:layout_marginEnd">@dimen/heading_margin_top</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="positive_patients_textView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:text">@string/number_of_positive_patients</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/positive_patients_text_size</item>
+    </style>
+
+    <style name="number_of_positive_patients_textView">
+        <item name="android:layout_width">@dimen/full_name_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">end</item>
+        <item name="android:text">@string/zero</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/positive_patients_text_size</item>
+    </style>
+
+    <style name="pending_results_textView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:text">@string/number_of_pending_results</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/positive_patients_text_size</item>
+    </style>
+
+    <style name="main_activity_buttons_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/buttons_margin_top</item>
+        <item name="android:layout_marginStart">@dimen/heading_margin_top</item>
+        <item name="android:layout_marginEnd">@dimen/heading_margin_top</item>
+    </style>
+
+    <style name="button_add_entry">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/button_add_entry_margin_start</item>
+        <item name="android:layout_marginEnd">@dimen/heading_margin_bottom</item>
+        <item name="android:background">@drawable/buttons</item>
+        <item name="android:drawableStart">@drawable/add</item>
+        <item name="android:text">@string/add_entry</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="button_refresh">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/button_add_entry_margin_start</item>
+        <item name="android:layout_marginEnd">@dimen/heading_margin_bottom</item>
+        <item name="android:background">@drawable/buttons</item>
+        <item name="android:drawableStart">@drawable/refresh</item>
+        <item name="android:text">@string/refresh</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="rvListLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/heading_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/heading_margin_top</item>
+    </style>
+
+    <style name="tvProgressbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/tvProgressbar_margin_top</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:text">@string/refreshing_data_please_wait</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="tvProgressbar_add">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/tvProgressbar_margin_top</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:text">@string/loading_please_wait</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="login_form_Layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="full_name_cardview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginStart">@dimen/cardview_margin_start</item>
+        <item name="android:layout_marginEnd">@dimen/cardview_margin_start</item>
+        <item name="android:layout_marginTop">@dimen/heading_margin_top</item>
+        <item name="android:padding">@dimen/padding</item>
+    </style>
+
+    <style name="etFullName">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:inputType">textPersonName</item>
+        <item name="android:hint">@string/enter_full_name</item>
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+
+    <style name="etID">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:inputType">number</item>
+        <item name="android:hint">@string/enter_id_nr</item>
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+
+    <style name="switchPos">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/switch_margin_top</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/switch_padding</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:text">@string/pending_results</item>
+        <item name="android:textOff">@string/pending</item>
+        <item name="android:textOn">@string/positive</item>
+        <item name="android:textSize">@dimen/positive_patients_text_size</item>
+    </style>
+
+    <style name="button_add_entry2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginStart">@dimen/button_add_entry2_margin_start</item>
+        <item name="android:layout_marginEnd">@dimen/button_add_entry2_margin_start</item>
+        <item name="android:layout_marginTop">@dimen/heading_margin_top</item>
+        <item name="android:background">@drawable/buttons</item>
+        <item name="android:drawableStart">@drawable/add</item>
+        <item name="android:text">@string/add_entry</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="cardview_row_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginBottom">@dimen/switch_padding</item>
+        <item name="android:layout_marginStart">@dimen/switch_padding</item>
+        <item name="android:layout_marginEnd">@dimen/switch_padding</item>
+        <item name="android:layout_marginTop">@dimen/switch_padding</item>
+    </style>
+
+    <style name="row_Layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="tvFullName">
+        <item name="android:layout_width">@dimen/full_name_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">5</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/char_text_size</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="imageview">
+        <item name="android:layout_width">@dimen/full_name_width</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawable">@drawable/add</item>
+    </style>
+
+</resources>
